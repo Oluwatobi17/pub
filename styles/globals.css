@@ -1,9 +1,31 @@
+:root{
+	--greenColor: #72ae44;
+	--blueColor: #191f30; 
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Roboto Slab', serif;
+  color: var(--blueColor);
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+}
+header{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+main{
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+}
+.cursor{
+  cursor: pointer;
 }
 
 a {
@@ -11,6 +33,330 @@ a {
   text-decoration: none;
 }
 
+.active{
+  background-color: rgba(114, 174, 68, 0.1);
+  color: white;
+}
+
 * {
   box-sizing: border-box;
+}
+.truncate{
+  width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.special{
+  color: var(--greenColor);
+}
+.product-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.recipe-card .fa{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-align: left;
+  font-size: 20px;
+}
+.product-card button{
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  background-color: var(--greenColor);
+  outline: none;
+  cursor: pointer;
+  transition: all 500ms;
+  margin-top: 10px;
+}
+.product-card button:hover{
+  transform: scale(1.05);
+  background-color: var(--blueColor);
+}
+.recipe-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  box-sizing: border-box;
+}
+.recipe-card{
+  width: 300px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: all 500ms;
+  text-align: center;
+  max-height: 300px;
+}
+.recipe-card:hover{
+  transform: translateY(-10px);
+}
+.recipe-card img{
+  height: 50%;
+  border-radius: 4px;
+}
+.recipe-card p{
+  color: rgba(0, 0, 0, 0.7);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.recipe-card a{
+  color: var(--greenColor);
+}
+.recipe-card a:hover{
+  color: black;
+}
+.extra-card{
+  text-align: center;
+}
+.extra-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+.extra{
+  width: 550px;
+  max-height: 200px;
+  display: flex;
+  text-align: start;
+  margin-bottom: 20px;
+  align-items: center;
+  cursor: pointer;
+  transition: all 500ms;
+}
+.siderecipe{
+  width: 550px;
+  max-height: 200px;
+  display: flex;
+  text-align: start;
+  margin-bottom: 20px;
+  align-items: center;
+  cursor: pointer;
+  transition: all 500ms;
+}
+.siderecipe:hover{
+  transform: translate(2px);
+}
+.siderecipe img{
+  height: 60px;
+  margin-right: 10px;
+}
+.siderecipe-info h3{
+  margin-top: 0px;
+}
+.siderecipe-info a{
+  color: var(--greenColor);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 500ms;
+}
+.siderecipe-info a:hover{
+  color: var(--blueColor);
+}
+.extra:hover{
+  transform: translate(10px);
+}
+.extra-card h1{
+  color: red;
+}
+.link{
+  background-color: var(--greenColor);
+  color: white;
+  padding: 10px 30px;
+  transition: all 500ms;
+  margin-top: 20px;
+  display: inline-block;
+}
+.link:hover{
+  background-color: var(--blueColor);
+}
+
+.extra img{
+  height: 100px;
+  margin-right: 25px;
+}
+.extra-info h2{
+  margin-top: 0px;
+}
+.extra-info p{
+  font-size: 13px;
+}
+.extra-info small{
+  color: var(--greenColor);
+  font-style: italic;
+}
+.about{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  padding: 10px 30px;
+}
+.about img{
+  width: 300px;
+  margin-bottom: 10px;
+}
+.about > div{
+  width: 300px;
+}
+.about > div a{
+  background-color: var(--greenColor);
+  color: white;
+  padding: 10px 30px;
+  transition: all 500ms;
+  margin-top: 20px;
+  display: inline-block;
+}
+.about > div a:hover{
+  background-color: var(--blueColor);
+}
+.recipe-details{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.recipe-info img{
+  height: 50vh;
+}
+.recipe-info{
+  width: 800px;
+}
+.sidebar{
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+blockquote{
+  padding: 20px 30px;
+  border-left: 3px solid var(--greenColor);
+  background-color: aliceblue;
+}
+blockquote .fa{
+  color: var(--greenColor);
+  font-size: 1.2em;
+  margin-right: 20px;
+}
+.personal-info{
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ccc;
+}
+.personal-info > p{
+  margin-right: 20px;
+  padding: 10px 0px 20px 0px;
+  border: 1px solid transparent;
+  transition: all 500ms;
+  margin-bottom: 0px;
+}
+.personal-info > p:hover{
+  color: var(--greenColor);
+  border-bottom: 1px solid var(--greenColor);
+}
+.personal-info > p .fa{
+  margin-right: 10px;
+  color: var(--greenColor);
+}
+.recipe-summary{
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.dish-type{
+  width: 100%;
+  padding: 00px 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+.dishes{
+  display: flex;
+  flex-wrap: wrap;
+}
+.dishes span{
+  padding: 10px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(0, 0, 0, 0.1);
+  color:rgba(0, 0, 0, 0.7);
+  font-size: 13px;
+  margin-right: 20px;
+  transition: all 500ms;
+  margin-bottom: 15px;
+}
+.dishes span:hover{
+  color: white;
+  background-color: var(--greenColor);
+  cursor: pointer;
+}
+
+footer{
+  width: 100%;
+  padding: 40px 40px;
+  background-color: var(--blueColor);
+  color: white;
+  margin-top: 30px;
+}
+footer > div{
+  margin-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: space-between;
+}
+footer > div > div{
+  width: 30%;
+}
+.footer-links{
+  display: flex;
+  flex-direction: column;
+}
+.footer-links a{
+  margin-bottom: 20px;
+  transition: all 500ms;
+}
+.footer-links a:hover{
+  color: var(--greenColor);
+}
+footer > p{
+  color: white;
+  text-align: center;
+  font-size: 11px;
+  margin-top: 30px;
+}
+
+
+@media screen and (max-width: 1100px) {
+  .sidebar{
+    width: 100%;
+  }
+  .recipe-info{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .extra-info{
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .extra-info h2{
+    font-size: 0.9em;
+    margin-bottom: 2px;
+  }
+  .extra-info p{
+    font-size: 0.6em;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  .extra-info small{
+    font-size: 0.5em;
+  }
 }
