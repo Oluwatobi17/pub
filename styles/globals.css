@@ -133,6 +133,7 @@ a {
   width: 550px;
   max-height: 200px;
   display: flex;
+  flex-wrap: wrap;
   text-align: start;
   margin-bottom: 20px;
   align-items: center;

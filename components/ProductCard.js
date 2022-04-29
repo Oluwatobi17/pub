@@ -12,7 +12,8 @@ const ProductCard = ({title, recipes})=>{
 
 	useEffect(()=>{
 		if(router.pathname === '/favorites' && recipes.length===0){
-			setRecipesState(JSON.parse(localStorage.getItem('favorites')));
+			let store = JSON.parse(localStorage.getItem('favorites')) || [];
+			setRecipesState(store);
 		}else{
 			localStorage.setItem('storedRecipes', JSON.stringify(recipes));
 			setRecipesState(recipes);
