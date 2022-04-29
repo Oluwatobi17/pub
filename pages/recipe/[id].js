@@ -148,7 +148,10 @@ export const getStaticProps = async (context) =>{
 
 RecipeDetails.defaultProps = {
 	random: [],
-	beer_info: {},
+	beer_info: {
+		image_url: '/assets/ganiu.jpg', contributed_by: 'Ganiu', first_brewed: 'Nil',
+		nama: 'not found', description: 'not found', brewers_tips: 'no tips'
+	},
 	similarBeer: []
 }
 
