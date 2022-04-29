@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from "next/image";
 
 const about = () =>{
+
 	return <div className="about">
         <Head>
             <title>Pub | About Us</title>
@@ -21,7 +22,9 @@ const about = () =>{
                 Checkout my portfolio with the link below to see all my awesome web projects 
                 or contact me for hire.
                 <br />
-                <a href="https://portfolio-f576a.web.app/projects" target='_blank'>Portfolio</a>
+                <a href="https://portfolio-f576a.web.app/projects" target='_blank' rel="noreferrer">
+                    Portfolio
+                </a>
             </p>
 
             {/* <Link href='/'>Browse Recipe</Link> */}

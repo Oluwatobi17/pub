@@ -11,9 +11,9 @@ const RecipeCard = ({recipe})=>{
 		let storedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
 		
 		if(storedFavorites.indexOf(recipe.id) === -1){
-			setIcon(<i class="fa fa-heart-o" aria-hidden="true" onClick={favorHandler}></i>)
+			setIcon(<i className="fa fa-heart-o" aria-hidden="true" onClick={favorHandler}></i>)
 		}else{
-			setIcon(<i class="fa fa-heart" aria-hidden="true" onClick={favorHandler} ></i>)
+			setIcon(<i className="fa fa-heart" aria-hidden="true" onClick={favorHandler} ></i>)
 		}
 	}, [icon])
 

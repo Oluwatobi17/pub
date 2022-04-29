@@ -6,7 +6,7 @@ import DishType from '../../components/DishType';
 import SimilarRecipe from '../../components/SimilarRecipe';
 import ExtraCard from '../../components/ExtraCard';
 
-const recipeDetails = (props) =>{
+const RecipeDetails = (props) =>{
 	const [ingredients, setIngredients] = useState([]);
 
 	useEffect(()=>{
@@ -72,4 +72,4 @@ export const getStaticProps = async (context) =>{
 	}
 };
 
-export default recipeDetails;
+export default RecipeDetails;
