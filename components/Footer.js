@@ -5,7 +5,7 @@ const Footer = () =>{
         <footer>
             <div>
                 <div>
-                    <h2 className="special">Salivate</h2>
+                    <h2 className="special">Pub</h2>
                     <p>Pub is a side project by Ganiu Ibrahim Olalekan about beers. The
                          project was created using
                          NextJs and API from https://punkapi.com.</p>
