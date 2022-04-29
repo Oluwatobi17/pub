@@ -1,6 +1,5 @@
 import ProductCard from '../components/ProductCard';
 import ExtraCard from '../components/ExtraCard';
-import { API_KEY } from '../utils/env';
 
 //<ProductCard title='Our Latest Recipe' recipes={props.recipes} />
 const home = (props) =>{

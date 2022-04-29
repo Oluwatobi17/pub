@@ -3,8 +3,6 @@ import { useRouter } from 'next/router';
 
 import RecipeCard from './RecipeCard';
 
-import { API_KEY } from '../utils/env';
-
 const ProductCard = ({title, recipes})=>{
 	const [recipesState, setRecipesState] = useState([]);
 	const [loading, setLoading] = useState(false);

@@ -35,10 +35,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/about.js"
     ],
-    "/favorites": [
+    "/recipe/[id]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/favorites.js"
+      "static/chunks/pages/recipe/[id].js"
     ]
   },
   "ampFirstPages": []
