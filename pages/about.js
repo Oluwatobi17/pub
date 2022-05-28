@@ -28,7 +28,7 @@ const about = () =>{
                 </a> */}
             </p>
 
-            <Link href='https://portfolio-f576a.web.app/projects'>Portfolio</Link>
+            <Link href='https://ganiuportfolio.vercel.app/'>Portfolio</Link>
         </div>
 	</div>
 }
